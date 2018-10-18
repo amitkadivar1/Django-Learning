@@ -1,4 +1,4 @@
-"""django_lvl_5 URL Configuration
+"""Django_lvl_Five URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.1/topics/http/urls/
@@ -14,9 +14,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from Application import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index)
+    path('application/', include('Application.urls')),
+    path('', views.index, name='index'),
+    path('logout', views.user_logout, name = 'logout'),
+    path('special', views.special, name = 'special'),
 ]
