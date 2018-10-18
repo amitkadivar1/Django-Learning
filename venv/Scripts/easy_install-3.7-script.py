@@ -1,4 +1,4 @@
-#!C:\Users\admin\PycharmProjects\django_lvl_5\venv\Scripts\python.exe
+#!C:\Users\admin\PycharmProjects\Django_lvl_Five\venv\Scripts\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'setuptools==39.0.1','console_scripts','easy_install-3.7'
 __requires__ = 'setuptools==39.0.1'
 import re
