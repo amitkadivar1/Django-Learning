@@ -26,9 +26,8 @@ SECRET_KEY = 'knkfemme&pbj_$@!=5x1mdimg-$ar%lsdc5o$(vd$(x4#z+ov3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = []
-
+#if you live then make sure DEBUG=False
+ALLOWED_HOSTS = ['localhost','yourdomain.com']
 
 # Application definition
 

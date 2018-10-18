@@ -19,7 +19,9 @@ from Application import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #include application url
     path('application/', include('Application.urls')),
+    #first open index page
     path('', views.index, name='index'),
     path('logout', views.user_logout, name = 'logout'),
     path('special', views.special, name = 'special'),
